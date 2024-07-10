@@ -82,7 +82,7 @@ footer a {
 }
 /*main*/
 
-/* Media query*/
+/* Media queries*/
 @media (max-width: 768px){
     .contenedor-2{
         grid-template-columns: 1fr;
@@ -96,4 +96,4 @@ footer a {
         font-size: 15px;
     }
 }
-/* Media query*/
+/* Media queries*/
