@@ -20,7 +20,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
@@ -41,34 +41,37 @@
     </header> <!--Encabezado-->
     <main> <!--Main-->
         <div>
-            <h1 class="titulos">¡Bienvenidos a Jazz Vibes!</h1>
+            <h1 class="titulos-rs">¡Bienvenidos a Jazz Vibes!</h1>
         </div>
-       <section class="contenedor-1 container-fluid">
-            <h3 class="titulos">Descubre la esencia y las vibras del jazz a través de nuestra página dedicada a este apasionante género musical. En Jazz Vibes, te ofrecemos:</h3>
+        <div class="linea"></div>
+       <section class="contenedor-1">
+            <h3 class="titulos-rs">Descubre la esencia y las vibras del jazz a través de nuestra página dedicada a este apasionante género musical.</h3>
             <ul class="titulos">
-                <li><p>Biografías: Conoce las historias inspiradoras de los grandes artistas del jazz, desde los pioneros hasta los innovadores    contemporáneos.</p></li>
-                <li><p>Álbumes: Sumérgete en una hermosa colección de canciones y álbumes que definen el sonido del jazz en todas sus formas</p></li>
-                <li><p>Galería: Explora nuestras galerías visuales con fotos, videos y arte relacionado con el jazz.</p></li>
+                <li><p><span class="negrita">Biografías: </span>Conoce las historias inspiradoras de los grandes artistas del jazz, desde los pioneros hasta los innovadores contemporáneos.</p></li>
+                <li><p><span class="negrita">Álbumes: </span>Sumérgete en una hermosa colección de canciones y álbumes que definen el sonido del jazz en todas sus formas</p></li>
+                <li><p><span class="negrita">Contacto: </span>Donde podras contactarnos mediante un formulario, ver nuestra informacion y ubucacion.</p></li>
             </ul>
        </section>
+       <div class="linea"></div>
        <div class="titulos">
         <h2 class="titulos">Artistas Destacados</h2>
        </div>
+       <div class="separador"></div>
        <section class="contenedor-2">
             <article class="card">
                 <h3 class="titulos">Miles Davis</h3>
-                <img src="./assets/miles-davis.jpg" alt="Miles Davis" class="img">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi soluta labore consequatur, nam ut quis temporibus provident consequuntur unde deleniti maiores est rerum, ad sapiente iste cumque fuga eum itaque.</p>
+                <img src="./assets/miles-davis.jpg" alt="Miles Davis" class="img border border-light-subtle">
+                <p class="text-justify">Fue uno de los más grandes innovadores y pioneros del jazz. El toque de su trompeta tenía una inconfundible calidad y característica gracias a la sordina de acero Harmon, que le proporcionaba un toque íntimo y suave.</p>
             </article>
             <article class="card">
                 <h3 class="titulos">Louis Armstrong</h3>
-                <img src="./assets/louis-armstrong.jpg" alt="Louis Armstrong" class="img">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi soluta labore consequatur, nam ut quis temporibus provident consequuntur unde deleniti maiores est rerum, ad sapiente iste cumque fuga eum itaque.</p>
+                <img src="./assets/louis-armstrong.jpg" alt="Louis Armstrong" class="img border border-light-subtle">
+                <p>Uno de los innovadores musicales más importantes del siglo XX, Louis Armstrong es el padre del jazz: apodado Satchmo y Pops, de niño y adolescente, Armstrong vivió mil dificultades y penurias, por ejemplo su madre fue obligada a prostituirse y él, como todos los negros de Estados Unidos, sufrió la discriminación racial.</p>
             </article>
             <article class="card">
                 <h3 class="titulos">Billie Holiday</h3>
-                <img src="./assets/billie-holiday.jpg" alt="Billie Holiday" class="img">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi soluta labore consequatur, nam ut quis temporibus provident consequuntur unde deleniti maiores est rerum, ad sapiente iste cumque fuga eum itaque.</p>
+                <img src="./assets/billie-holiday.jpg" alt="Billie Holiday" class="img border border-light-subtle">
+                <p>Fue una cantante estadounidense de jazz, considerada una de las tres voces femeninas más importantes e influyentes de este género musical, junto con Sarah Vaughan y Ella Fitzgerald. El crítico Robert Christgau consideraba que era «inigualable y posiblemente la mejor cantante del siglo».</p>
             </article>
        </section>
     </main> <!--Main-->
@@ -78,10 +81,10 @@
                 <div class="col-12 col-md-4 mb-4 mb-md-0">
                     <h4>Accesos Rapidos</h4>
                     <ul class="list-unstyled">
-                        <li class="py-1"><a href="" class="text-decoration-none">Inicio</a></li>
-                        <li class="py-1"><a href="" class="text-decoration-none">Biografias</a></li>
-                        <li class="py-1"><a href="" class="text-decoration-none">Albumes</a></li>
-                        <li class="py-1"><a href="" class="text-decoration-none">Contacto</a></li>
+                        <li class="py-1"><a href="./index.html" class="text-decoration-none">Inicio</a></li>
+                        <li class="py-1"><a href="./pages/biografias.html" class="text-decoration-none">Biografias</a></li>
+                        <li class="py-1"><a href="./pages/albumes.html" class="text-decoration-none">Albumes</a></li>
+                        <li class="py-1"><a href="./pages/contacto.html" class="text-decoration-none">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0 text-center">
@@ -92,14 +95,14 @@
                 <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-right">
                     <h4>Redes Sociales</h4>
                     <div class="social-media">
-                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-light fs-2 me-3"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="text-light fs-2"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.facebook.com/" class="text-light fs-2 me-3" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="text-light fs-2 me-3" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://x.com/home?lang=es" class="text-light fs-2 me-3" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.youtube.com/" class="text-light fs-2" target="_blank"><i class="bi bi-youtube" ></i></a>
                     </div>
                 </div>
             </div>
-            <hr>
+            <div class="linea"></div>
             <div class="d-sm-flex justify-content-center py-1">
                 <p>© 2024 Jazz Vibes. Todos los derechos reservados.</p>
             </div>

@@ -8,9 +8,15 @@
 header {
     background-color: #5d6d7c; 
 }
+main{
+    display: grid;
+    padding: 20px;
+    background-color: #73889d;
+}
 /*Footer*/
 
 footer {
+    padding-top: 15px;
     background-color: #5d6d7c ;
 }
 footer a {
@@ -21,16 +27,13 @@ footer a {
 
 /*Menu de navegacion*/
 
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-
 .logo {
     height: 70px;
 }
 
 /*Menu de navegacion*/
 
+/*main*/
 .contenedor-1 {
     display: grid;
     grid-template-rows: auto;
@@ -40,9 +43,10 @@ footer a {
 .contenedor-2 {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    gap: 20px;
     background-color: #73889d   ;
 }
 .card{
@@ -53,9 +57,43 @@ footer a {
     display: grid;
     justify-content: center;
     background-color: #73889d ;
-    margin: 0;
-    padding: 0;
+}
+.titulos-rs{
+    display: grid;
+    justify-content: center;
+    font-size: 23px;
+    margin: 20px auto;
+    
+}
+.linea{
+    border-bottom: 2px solid #000;
+    margin: 20px 0;
+}
+.separador{
+    margin: 20px 0;
 }
 .contenedor-2 .img {
     max-width: 100%;
 }
+.negrita{
+    font-weight: 500; 
+    color:#000000;
+    padding: 5px;
+}
+/*main*/
+
+/* Media query*/
+@media (max-width: 768px){
+    .contenedor-2{
+        grid-template-columns: 1fr;
+    }
+    .titulos-rs{
+        font-size: 20px;
+    }
+}
+@media (max-width: 388px) {
+    .titulos-rs {
+        font-size: 15px;
+    }
+}
+/* Media query*/
