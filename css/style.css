@@ -4,31 +4,44 @@
   font-family:'rubik';
   margin: 0;
   padding: 0;
+  color: #E7DCC5;
 }
 header {
-    background-color: #5d6d7c; 
+    background-color: #2d3238; 
 }
 main{
     display: grid;
     padding: 20px;
-    background-color: #dbdbdb;
+    background-color: #212529;
 }
 /*Footer*/
 
 footer {
     padding-top: 15px;
-    background-color: #5d6d7c ;
+    background-color: #2d3238 ;
 }
-footer a {
-    color: #000000;
+footer a{
+    color: #E7DCC5;
 }
-
+footer a:hover{
+    color: #a84747;
+}
 /*Footer*/
 
 /*Menu de navegacion*/
 
 .logo {
     height: 70px;
+}
+
+.botones a{
+    color: #E7DCC5 !important;
+}
+.botones a:hover {
+    color: #a84747 !important;
+}
+.botones i:hover {
+    color: #a84747 !important;
 }
 
 /*Menu de navegacion*/
@@ -38,7 +51,7 @@ footer a {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
-    background-color: #dbdbdb;
+    background-color: #212529;
 }
 .contenedor-2 {
     display: grid;
@@ -47,16 +60,16 @@ footer a {
     justify-content: center;
     align-items: start;
     gap: 20px;
-    background-color: #dbdbdb   ;
+    background-color: #212529   ;
 }
 .card{
-    border: 0;
-    background-color: #dbdbdb;
+    border: none;
+    background-color: #212529;
 }
 .titulos{ 
     display: grid;
     justify-content: center;
-    background-color: #dbdbdb ;
+    background-color: #212529 ;
 }
 .titulos-rs{
     display: grid;
@@ -65,21 +78,19 @@ footer a {
     margin: 20px auto;
 }
 .linea{
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #E7DCC5;
     margin: 20px 0;
 }
 .separador{
     margin: 20px 0;
 }
-.separador-text{
-    padding-top: 75px;
-}
+
 .contenedor-2 .img {
     max-width: 100%;
 }
 .negrita{
     font-weight: 500; 
-    color:#000000;
+    color:#f0c871;
     padding: 5px;
 }
 /*main*/
@@ -88,12 +99,12 @@ footer a {
 
 .contenedor-3{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
     gap: 10px;
     grid-template-areas:    
-        "imagenpri parrafo1 parrafo2 imagen"
-        "imagenpri parrafo1 paraffo2 spotify"
+        "imagen parrafo1 parrafo2"
+        "spotify parrafo1 parrafo2"
     ;
     max-width: 1600px;
     margin: 10px auto;
@@ -117,7 +128,7 @@ footer a {
 .first::first-letter{
     font-size: 150%;
     font-weight: bold;
-    color: #5d6d7c;
+    color: #f0c871;
 }
 /*
 .imagen-p{
@@ -137,9 +148,6 @@ footer a {
     grid-row: 1 / 1;
 }*/
 
-#imagen-principal{
-    grid-area: imagenpri;
-}
 #parrafos-1{
     grid-area: parrafo1;
 }
@@ -159,13 +167,13 @@ footer a {
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .contenedor-3{
-        grid-template-columns: auto auto auto;
-        grid-template-rows: repeat(2, auto);
-        gap: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 10px;
         grid-template-areas: 
-            "imagenpri parrafo1 parrafo2"
-            "imagenpri parrafo1 parrafo2"
-            "imagen spotify spotify" 
+            "parrafo1 imagen"
+            "parrafo2 parrafo2"
+            "spotify spotify" 
         ;
     }
 }
@@ -174,31 +182,24 @@ footer a {
     .contenedor-2{
         grid-template-columns: 1fr;
     }
-    .titulos-rs{
-        font-size: 20px;
-    }
-    .contenedor-3{
-        grid-template-columns: auto auto;
-        grid-template-rows: repeat(3, auto);
-        grid-template-areas: 
-            "imagenpri imagen"
-            "parrafo1 parrafo2"
-            "spotify spotify"
-        ;
-    }
-}
-
-@media screen and (max-width: 480px) {
     .contenedor-3{
         grid-template-columns: auto auto;
         grid-template-rows: repeat(4, auto);
+        column-gap: 10px;
         grid-template-areas: 
-            "imagenpri imagen"
+            "imagen imagen"
             "parrafo1 parrafo1"
             "parrafo2 parrafo2"
-            "spotify spotify"
+            "spotify spotify" 
         ;
     }
+    .titulos-rs{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
     .text{
         padding-top: 20px;
     }
