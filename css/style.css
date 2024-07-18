@@ -163,6 +163,31 @@ footer a:hover{
 
 /*Biografias*/
 
+/*Albumes*/
+
+.contenedor-4{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    grid-template-areas:    
+        "parrafo1 parrafo2"
+        "parrafo1 parrafo2"
+        "spotify spotify"
+    ;
+    max-width: 1600px;
+    margin: 10px auto;
+}
+.carrusel{
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+}
+.titulosalbumes{
+    color: #f0c871;
+}
+/*Albumes*/
+
 /* Media queries*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -173,6 +198,16 @@ footer a:hover{
         grid-template-areas: 
             "parrafo1 imagen"
             "parrafo2 parrafo2"
+            "spotify spotify" 
+        ;
+    }
+    .contenedor-4{
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 10px;
+        grid-template-areas: 
+            "parrafo2 parrafo2"
+            "parrafo1 parrafo1"
             "spotify spotify" 
         ;
     }
@@ -190,6 +225,16 @@ footer a:hover{
             "imagen imagen"
             "parrafo1 parrafo1"
             "parrafo2 parrafo2"
+            "spotify spotify" 
+        ;
+    }
+    .contenedor-4{
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 10px;
+        grid-template-areas: 
+            "parrafo2 parrafo2"
+            "parrafo1 parrafo1"
             "spotify spotify" 
         ;
     }
