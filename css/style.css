@@ -46,14 +46,14 @@ footer a:hover{
 /*Menu de navegacion*/
 
 /*main*/
-.contenedor-1 {
+.contenedor-bienvenida {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
     justify-content: center;
     background-color: #212529;
 }
-.contenedor-2 {
+.contenedor-artistas-destacados {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
@@ -73,13 +73,6 @@ footer a:hover{
     font-size: 27px;
     background-color: #212529 ;
 }
-.titulos-rs{
-    display: grid;
-    justify-content: center;
-    color: #f0c871;
-    font-size: 23px;
-    margin: 20px auto;
-}
 .parrafo{
     display: grid;
     grid-template-columns: auto;
@@ -92,11 +85,7 @@ footer a:hover{
     margin: 20px 0;
 }
 .separador{
-    margin: 20px 0;
-}
-
-.contenedor-2 .img {
-    max-width: 100%;
+    margin: 25px 0;
 }
 .negrita{
     font-weight: 500; 
@@ -107,7 +96,7 @@ footer a:hover{
 
 /*Biografias*/
 
-.contenedor-3{
+.contenedor-biografias{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
@@ -132,7 +121,6 @@ footer a:hover{
 }
 .text{
     padding-top: 50px;
-    
 }
 .first::first-letter{
     font-size: 150%;
@@ -156,7 +144,7 @@ footer a:hover{
 
 /*Albumes*/
 
-.contenedor-4{
+.contenedor-albumes{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
@@ -181,7 +169,7 @@ footer a:hover{
 
 /*Contacto*/
 
-.contenedor-5 {
+.contenedor-contacto {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
@@ -223,7 +211,10 @@ footer a:hover{
     padding: 10px;
     border-radius: 10px;
 }
-
+.button{
+    display: grid;
+    justify-content: center;
+}
 .contact-links{
     display: grid;
     align-items: center;
@@ -254,7 +245,7 @@ footer a:hover{
 /* Media queries*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    .contenedor-3{
+    .contenedor-biografias  {
         grid-template-columns: auto auto;
         grid-template-rows: repeat(3, auto);
         column-gap: 10px;
@@ -264,7 +255,7 @@ footer a:hover{
             "spotify spotify" 
         ;
     }
-    .contenedor-4{
+    .contenedor-albumes{
         grid-template-columns: auto auto;
         grid-template-rows: repeat(3, auto);
         column-gap: 10px;
@@ -277,10 +268,10 @@ footer a:hover{
 }
 
 @media screen and (max-width: 768px){
-    .contenedor-2{
+    .contenedor-artistas-destacados{
         grid-template-columns: 1fr;
     }
-    .contenedor-3{
+    .contenedor-biografias{
         grid-template-columns: auto auto;
         grid-template-rows: repeat(4, auto);
         column-gap: 10px;
@@ -291,7 +282,7 @@ footer a:hover{
             "spotify spotify" 
         ;
     }
-    .contenedor-4{
+    .contenedor-albumes{
         grid-template-columns: auto auto;
         grid-template-rows: repeat(3, auto);
         column-gap: 10px;
@@ -301,7 +292,7 @@ footer a:hover{
             "spotify spotify" 
         ;
     }
-    .contenedor-5{
+    .contenedor-contacto{
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
         grid-template-areas: 
