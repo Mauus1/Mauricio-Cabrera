@@ -1,0 +1,65 @@
+/*MAIN*/
+
+// Config 
+@import './reset/vars';
+@import './reset/mixin';
+@import './reset/reset' ;
+
+// Header
+@import './config-main/header';
+@import './config-main/navegacion-main';
+
+// Footer
+@import './config-main/footer';
+
+// Grids
+@import './config-main/grid-main';
+
+// Contenido
+@import './config-main/titulos-main';
+@import './config-main/parrafos-main';
+
+/*BIOGRAFIAS*/
+
+// Grids
+@import './biografias/grid-bio';
+@import './biografias/grid-area-bio';
+
+// Textos
+@import './biografias/text-bio';
+
+// Fotos
+@import './biografias/fotos-bio';
+
+/*ALBUMES*/
+
+// Grids
+@import './albumes/grid-albu';
+
+// Carrusel
+@import './albumes/carrusel-albu';
+
+// Titulos
+@import './albumes/titulos-albu';
+
+/*CONTACTO*/
+
+// Grids
+@import './contacto/grid-contact-';
+
+// Forms
+@import './contacto/form-contact';
+
+// Links
+@import './contacto/links-contact';
+
+// Titulos
+@import './contacto/titulos-contact';
+
+// Botones 
+@import './contacto/button.contact';
+
+/*MEDIA QUERIES*/
+
+// Media Queries
+@import './reset/mq';

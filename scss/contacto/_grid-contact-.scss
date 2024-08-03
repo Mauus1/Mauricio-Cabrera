@@ -1,0 +1,12 @@
+.contenedor-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "form info"
+        "form social"
+        "map map";
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

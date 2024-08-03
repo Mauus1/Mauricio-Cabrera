@@ -1,0 +1,21 @@
+.contact-links{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-area: social;
+    padding: 10px;
+    background-color: $color-darkslate;
+    border-radius: 10px;
+    & a{
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.map {
+    grid-area: map;
+    background-color: $color-darkslate;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}

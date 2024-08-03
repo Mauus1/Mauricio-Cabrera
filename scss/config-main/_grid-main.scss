@@ -1,0 +1,13 @@
+.contenedor-bienvenida {
+    @include grid-auto (auto, auto);
+    background-color: $color-darkslategray;
+}
+.contenedor-artistas-destacados {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    background-color: $color-darkslategray;
+}

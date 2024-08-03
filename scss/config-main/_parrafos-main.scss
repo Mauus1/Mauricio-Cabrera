@@ -1,0 +1,19 @@
+.card{
+    border: none;
+    background-color: $color-darkslategray;
+}
+.parrafo{
+    @include grid-auto(auto, auto);
+    max-width: 1300px;
+    margin: 10px auto;
+}
+.intro{
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+}
+.negrita{
+    font-weight: 500; 
+    color: $color-titulos;
+    padding: 5px;
+}

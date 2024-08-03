@@ -1,0 +1,14 @@
+.titulos{ 
+    display: grid;
+    justify-content: center;
+    color: $color-titulos;
+    font-size: 27px;
+    background-color: $color-darkslategray;
+}
+.linea{
+    border-bottom: 2px solid $color-textos;
+    margin: 20px 0;
+}
+.separador{
+    margin: 25px 0;
+}

@@ -10,7 +10,7 @@ header {
     background-color: #2d3238; 
 }
 main{
-    padding: 20px;
+    padding: 10px;
     background-color: #212529;
 }
 /*Footer*/
@@ -50,7 +50,6 @@ footer a:hover{
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: auto;
-    justify-content: center;
     background-color: #212529;
 }
 .contenedor-artistas-destacados {
@@ -80,6 +79,11 @@ footer a:hover{
     max-width: 1300px;
     margin: 10px auto;
 }
+.intro{
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+}
 .linea{
     border-bottom: 2px solid #E7DCC5;
     margin: 20px 0;
@@ -96,6 +100,7 @@ footer a:hover{
 
 /*Biografias*/
 
+/*GRID LAYOUT BIOGRAFIAS*/
 .contenedor-biografias{
     display: grid;
     grid-template-columns: repeat(3, auto);

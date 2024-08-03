@@ -1,0 +1,5 @@
+@mixin grid-auto ($colum, $row){
+    display: grid;
+    grid-template-columns: $colum;
+    grid-template-rows: $row;
+}

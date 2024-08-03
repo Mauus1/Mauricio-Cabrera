@@ -1,0 +1,13 @@
+.contenedor-albumes{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    grid-template-areas:    
+        "parrafo1 parrafo2"
+        "parrafo1 parrafo2"
+        "spotify spotify"
+    ;
+    max-width: 1600px;
+    margin: 10px auto;
+}

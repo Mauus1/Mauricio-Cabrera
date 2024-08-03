@@ -1,0 +1,68 @@
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .contenedor-biografias  {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 10px;
+        grid-template-areas: 
+            "parrafo1 imagen"
+            "parrafo2 parrafo2"
+            "spotify spotify" 
+        ;
+    }
+    .contenedor-albumes{
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 10px;
+        grid-template-areas: 
+            "parrafo2 parrafo2"
+            "parrafo1 parrafo1"
+            "spotify spotify" 
+        ;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contenedor-artistas-destacados{
+        grid-template-columns: 1fr;
+    }
+    .contenedor-biografias{
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(4, auto);
+        column-gap: 10px;
+        grid-template-areas: 
+            "imagen imagen"
+            "parrafo1 parrafo1"
+            "parrafo2 parrafo2"
+            "spotify spotify" 
+        ;
+    }
+    .contenedor-albumes{
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 10px;
+        grid-template-areas: 
+            "parrafo2 parrafo2"
+            "parrafo1 parrafo1"
+            "spotify spotify" 
+        ;
+    }
+    .contenedor-contacto{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 
+            "form form"
+            "info social"
+            "map map"
+        ;
+    }
+    .titulos-rs{
+        font-size: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .text{
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,15 @@
+.logo {
+    height: 70px;
+}
+.botones{
+    a{
+        color: $color-textos !important;
+    }
+    a:hover {
+        color: $color-botonesanimacion !important;
+    }
+    i:hover {
+        color: $color-botonesanimacion !important;
+    }
+}
+

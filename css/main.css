@@ -1,0 +1,295 @@
+/*MAIN*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  font-family: "rubik";
+  margin: 0;
+  padding: 0;
+  color: #E7DCC5;
+}
+
+main {
+  padding: 10px;
+  background-color: #212529;
+}
+
+header {
+  background-color: #2d3238;
+}
+
+.logo {
+  height: 70px;
+}
+
+.botones a {
+  color: #E7DCC5 !important;
+}
+.botones a:hover {
+  color: #a84747 !important;
+}
+.botones i:hover {
+  color: #a84747 !important;
+}
+
+footer {
+  padding-top: 15px;
+  background-color: #2d3238;
+}
+footer a {
+  color: #E7DCC5;
+}
+footer a:hover {
+  color: #a84747;
+}
+
+.contenedor-bienvenida {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #212529;
+}
+
+.contenedor-artistas-destacados {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  background-color: #212529;
+}
+
+.titulos {
+  display: grid;
+  justify-content: center;
+  color: #f0c871;
+  font-size: 27px;
+  background-color: #212529;
+}
+
+.linea {
+  border-bottom: 2px solid #E7DCC5;
+  margin: 20px 0;
+}
+
+.separador {
+  margin: 25px 0;
+}
+
+.card {
+  border: none;
+  background-color: #212529;
+}
+
+.parrafo {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  max-width: 1300px;
+  margin: 10px auto;
+}
+
+.intro {
+  display: grid;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.negrita {
+  font-weight: 500;
+  color: #f0c871;
+  padding: 5px;
+}
+
+/*BIOGRAFIAS*/
+.contenedor-biografias {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  grid-template-areas: "imagen parrafo1 parrafo2" "spotify parrafo1 parrafo2";
+  max-width: 1600px;
+  margin: 10px auto;
+}
+
+#parrafos-1 {
+  grid-area: parrafo1;
+}
+
+#parrafos-2 {
+  grid-area: parrafo2;
+}
+
+#image {
+  grid-area: imagen;
+}
+
+#spotify-area {
+  grid-area: spotify;
+}
+
+.text {
+  padding-top: 50px;
+}
+
+.first::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: #f0c871;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.center {
+  display: grid;
+  align-items: center;
+}
+
+/*ALBUMES*/
+.contenedor-albumes {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  grid-template-areas: "parrafo1 parrafo2" "parrafo1 parrafo2" "spotify spotify";
+  max-width: 1600px;
+  margin: 10px auto;
+}
+
+.carrusel {
+  display: grid;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.titulosalbumes {
+  color: #f0c871;
+}
+
+/*CONTACTO*/
+.contenedor-contacto {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "form info" "form social" "map map";
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  grid-area: form;
+  background-color: #2d3238;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #9c844f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #E7DCC5;
+  border-radius: 5px;
+  background-color: #2d3238;
+}
+
+.contact-info {
+  display: grid;
+  justify-content: center;
+  grid-area: info;
+  background-color: #2d3238;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.contact-links {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: social;
+  padding: 10px;
+  background-color: #2d3238;
+  border-radius: 10px;
+}
+.contact-links a {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.map {
+  grid-area: map;
+  background-color: #2d3238;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.tituloscontacto {
+  display: grid;
+  justify-content: center;
+  color: #f0c871;
+}
+
+.button {
+  display: grid;
+  justify-content: center;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenedor-biografias {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 10px;
+    grid-template-areas: "parrafo1 imagen" "parrafo2 parrafo2" "spotify spotify";
+  }
+  .contenedor-albumes {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 10px;
+    grid-template-areas: "parrafo2 parrafo2" "parrafo1 parrafo1" "spotify spotify";
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenedor-artistas-destacados {
+    grid-template-columns: 1fr;
+  }
+  .contenedor-biografias {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(4, auto);
+    column-gap: 10px;
+    grid-template-areas: "imagen imagen" "parrafo1 parrafo1" "parrafo2 parrafo2" "spotify spotify";
+  }
+  .contenedor-albumes {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(3, auto);
+    column-gap: 10px;
+    grid-template-areas: "parrafo2 parrafo2" "parrafo1 parrafo1" "spotify spotify";
+  }
+  .contenedor-contacto {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "form form" "info social" "map map";
+  }
+  .titulos-rs {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .text {
+    padding-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
